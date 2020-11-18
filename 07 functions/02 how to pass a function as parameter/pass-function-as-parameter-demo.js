@@ -2,13 +2,17 @@ function isEven(num) {
     return num % 2 === 0;
 }
 
-function isOdd (num) {
-    return num % 2 !== 0;
+function isOdd(num) {
+    return num % 2 === 1;
 }
 
-function printNumbers(check) {   
+/**
+ * Prints numbers between 0 and 9, which pass the given test
+ * @param {Function} test 
+ */
+function printNumbers(test) {   
     for (let i = 0; i < 10; i++) {       
-        if (check(i)) {
+        if (test(i)) {
             console.log(i);
         }             
     }
