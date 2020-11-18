@@ -1,7 +1,15 @@
+/**
+ * Tests whether number is even
+ * @param {number} num 
+ */
 function isEven(num) {
     return num % 2 === 0;
 }
 
+/**
+ * Tests whether number is even
+ * @param {number} num 
+ */
 function isOdd(num) {
     return num % 2 === 1;
 }
