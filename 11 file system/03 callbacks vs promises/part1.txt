@@ -1,0 +1,1 @@
+Promises have been introduced in ES6 (2015) to allow for more readable asynchronous code than is possible with callbacks.
