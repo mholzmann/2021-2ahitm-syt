@@ -1,5 +1,3 @@
-// JSON = Java Script Object Notation
-
 const fs = require('fs');
 
 const person = {
