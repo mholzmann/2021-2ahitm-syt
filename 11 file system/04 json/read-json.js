@@ -1,10 +1,13 @@
-const fs = require('fs');
+const fsPromises = require('fs').promises;
 
-fs.readFile('./person.json', {encoding: 'utf8'}, (err, data) => {
-    if (err) {
-        console.log(err);
-    } else {
-        const person = JSON.parse(data);
+async function readPerson() {
+    try {
+        const jsonString = await fsPromises.readFile('person.json', 'utf8');
+        const person = JSON.parse(jsonString);
         console.log(person);
+    } catch (error) {
+        console.error(person);
     }
-});
+}
+
+readPerson();
