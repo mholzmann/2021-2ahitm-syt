@@ -1,11 +1,15 @@
 // Prevent redirection on form submit
 document.querySelector('#form').addEventListener('submit', event => event.preventDefault())
 
+// Add click event
+document.querySelector('#catch-button').addEventListener('click', loadPokemon);
+
+// 
 /**
 * Fetching a JSON file across the network 
 */
 async function loadPokemon() {
-    document.getElementById('result').innerHTML = ""
+    document.querySelector('#result').innerHTML = ""
     const name = document.getElementById('pokemon').value;
 
     try {
