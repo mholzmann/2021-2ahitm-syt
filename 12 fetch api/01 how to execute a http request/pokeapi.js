@@ -13,5 +13,5 @@ async function loadPokemon() {
     const pokemon = await response.json();
 
     console.log(pokemon);
-    document.getElementById('result').innerHTML = `You catched a ${pokemon.name} with a height of ${pokemon.height} decimetres.`;
+    document.getElementById('result').innerText = `You catched a ${pokemon.name} with a height of ${pokemon.height} decimetres.`;
 }
