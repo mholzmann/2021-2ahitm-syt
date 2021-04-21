@@ -8,10 +8,10 @@ const app = express();
 // specify http server port
 const port = 3000;
 
-// respond with "hello world" to a HTTP GET request at route '/'
+// respond with index.html to a HTTP GET request at route '/'
 app.get('/', (req, res) => {
-    const file = path.join(__dirname, './public/index.html');
-    res.sendFile(file);
+    const filePath = path.join(__dirname, './public/index.html');
+    res.sendFile(filePath);
 });    
 
 // respond with "hello john" to a HTTP GET request at route '/john'
