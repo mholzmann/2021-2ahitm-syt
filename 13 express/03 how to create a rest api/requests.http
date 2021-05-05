@@ -1,0 +1,35 @@
+GET http://localhost:3000/api/tasks HTTP/1.1
+
+###################################################
+
+GET http://localhost:3000/api/tasks/2 HTTP/1.1
+
+###################################################
+
+POST http://localhost:3000/api/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+    "action": "do homework",
+    "done": false
+}
+
+###################################################
+
+PUT http://localhost:3000/api/tasks/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "action": "clean kitchen",
+    "done": true
+}
+
+###################################################
+
+DELETE http://localhost:3000/api/tasks HTTP/1.1
+
+###################################################
+
+DELETE http://localhost:3000/api/tasks/3 HTTP/1.1
+
+###################################################
