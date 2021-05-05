@@ -1,7 +1,7 @@
 {
   "name": "todo-list",
   "version": "1.0.0",
-  "action": "",
+  "description": "Representational state transfer (REST) is a software architectural style for creating web services. API means \"Application Programming Interface\".",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "http-status-codes": "^1.4.0"
+    "http-status-codes": "^2.1.4"
   }
 }

@@ -1,6 +1,6 @@
 // import module(s)
 const express = require('express');
-const { OK, CREATED, NO_CONTENT, BAD_REQUEST, NOT_FOUND } = require('http-status-codes');
+const { OK, CREATED, NO_CONTENT, BAD_REQUEST, NOT_FOUND } = require('http-status-codes').StatusCodes;
 
 // create router
 const router = express.Router();
