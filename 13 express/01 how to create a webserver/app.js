@@ -10,7 +10,7 @@ const port = 3000;
 
 // respond with index.html to a HTTP GET request at route '/'
 app.get('/', (req, res) => {
-    const filePath = path.join(__dirname, './public/index.html');
+    const filePath = path.join(__dirname, '/public/index.html');
     res.sendFile(filePath);
 });    
 
